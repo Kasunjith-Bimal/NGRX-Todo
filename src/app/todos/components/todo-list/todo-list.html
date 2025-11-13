@@ -1,0 +1,12 @@
+<div>
+  <h2>Todo List</h2>
+  <input type="text" [(ngModel)]="newTodo" placeholder="New todo title" />
+  <button (click)="addTodo()">Add Todo</button>
+  <div>
+    <app-todo-item *ngFor="let todo of todos; trackBy: trackByTodoId"
+      [todo]="todo"
+      (update)="onUpdate($event)"
+      (delete)="onDelete($event)">
+    </app-todo-item>
+  </div>
+</div>

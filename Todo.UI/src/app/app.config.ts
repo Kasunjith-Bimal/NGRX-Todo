@@ -16,6 +16,9 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
+    provideStore({ todos: todoReducer }),
+    provideEffects([TodoEffects]),
+    provideStoreDevtools({ maxAge: 25 }), 
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     TodoService

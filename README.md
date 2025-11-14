@@ -1,2 +1,1 @@
-[![Uploading image.png…]()
-](https://github.com/Kasunjith-Bimal/NGRX-Todo/blob/main/Todo.Image/TodoApp.JPG)
+![Todo App Screenshot](https://github.com/Kasunjith-Bimal/NGRX-Todo/raw/main/Todo.Image/TodoApp.JPG)
